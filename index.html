@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutant-Underground Acceptance Form</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- bootstrap css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 id="title">Mutant Underground Acceptance Form</h1>
+    <p id="description">
+      Thank you for deciding to join the fight against the sentinel services
+    </p>
+    <div id="form-cover">
+    <form id="survey-form" action="mailto:harunaoseni23@gmail.com" method="post" enctype="text/plain" autocomplete="off">
+      <div class="form-group" id="name">
+        <label for="inputName">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="Enter your name"
+          name="Name"
+          required
+        />
+      </div> 
+      <div class="form-group" id="ability">           
+        <label for="inputAbility">Ability</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAbility"
+          placeholder="Enter your ability"
+          name="Ability"
+          required
+        />
+      </div>
+      <div class="form-group" id="abilityLevel">
+        <label for="inputAbilityLevel"
+          >What options best describe your ability level?</label
+        >
+        <select class="form-control" id="inputAbilityLevel" name="Ability-Level">
+          <option disabled selected>
+            Select your ability level
+          </option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Mastery">Mastery</option>
+          <option value="uncontrollable">uncontrollable</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend style="font-size: 1em">
+          Would you be willing to join the fight as a field agent?
+        </legend>
+        <input id="definitely-btn" type="radio" name="field-agent" value="Definitely" />
+        <label for="definitely-btn">  Definitely</label><br />
+        <input id="maybe-btn" type="radio" name="field-agent" value="Maybe">
+        <label for="maybe-btn">  Maybe</label><br>
+        <input id="notSure-btn" name="field-agent" type="radio" value="Not Sure">
+        <label for="notSure-btn">  Not Sure</label>
+      </fieldset>
+      <fieldset>
+        <legend style="font-size: 1em">Which mutant inspired you to join the team?</legend>
+        <label for="Polaris"><input type="checkbox" value="Polaris" name="inspiration" id="Polaris">  Polaris</label> <br>
+        <label for="Thunderbird"><input type="checkbox" value="Thunderbird" name="inspiration" id="Thunderbird">  Thunderbird</label> <br>
+        <label for="Eclipse"><input type="checkbox" value="Eclipse" name="inspiration" id="Eclipse">  Eclipse</label> <br>
+        <label for="Blink"><input type="checkbox" value="Blink" name="inspiration" id="Blink">  Blink</label> <br>
+        <label for="Andy strucker"><input type="checkbox" value="Andy Strucker" name="inspiration" id="Andy Strucker">  Andy Strucker</label> <br>
+        <label for="Lauren Strucker"><input type="checkbox" value="Lauren Strucker" name="inspiration" id="Lauren Strucker">  Lauren Strucker</label> <br>
+        <label for="Reed Strucker"><input type="checkbox" value="Reed Strucker" name="inspiration" id="Reed Strucker">  Reed Strucker</label> 
+      </fieldset>
+      <div class="form-group textarea1">
+        <label for="reason">What is your reason for wanting to join the fight?</label>
+        <textarea class="form-control" id="reason" rows="3" name="reason"></textarea>
+      </div>
+      <div id="submit-button-div">
+      <button type="submit" class="btn btn-dark btn-lg btn-block">Submit</button>
+      </div>
+    </form>
+  </div>
+  </body>
+</html>
